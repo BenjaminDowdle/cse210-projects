@@ -12,7 +12,7 @@ public class ReflectingActivity : Activity
                                     "How did the spirit influence your life for good?",
                                     "What made you feel happy? Why?"};
 
-    public void displayReflection(int time)
+    public void DisplayReflection(int time)
     {
         var random = new Random();
         int index = random.Next(_prompts.Count());
@@ -25,8 +25,8 @@ public class ReflectingActivity : Activity
         Console.Clear();
         Console.WriteLine($"> {_questions[index]}");
 
-        displayAnimation(time);
+        DisplayAnimation(time);
 
-        displayEndMessage();
+        DisplayEndMessage();
     }
 }

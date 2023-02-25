@@ -3,7 +3,7 @@ public class BreathingActivity : Activity
     private string _breatheIn = "Breathe In...";
     private string _breatheOut = "Breathe Out...";
 
-    public void displayBreathing(int time)
+    public void DisplayBreathing(int time)
     {
 
         int breatheTime = 5;
@@ -44,6 +44,6 @@ public class BreathingActivity : Activity
 
         }
 
-        displayEndMessage();
+        DisplayEndMessage();
     }
 }

@@ -31,13 +31,13 @@ class Program
                 BreathingActivity breathingActivity = new BreathingActivity();
 
                 breathingActivity.ActivityName = "Breathing Activity";
-                breathingActivity.displayWelcomeMessage();
-                breathingActivity.displayDescription(activityInt);
+                breathingActivity.DisplayWelcomeMessage();
+                breathingActivity.DisplayDescription(activityInt);
 
                 breathingActivity.Time = Int32.Parse(Console.ReadLine());
 
                 breathingActivity.GetReady();
-                breathingActivity.displayBreathing(breathingActivity.Time);
+                breathingActivity.DisplayBreathing(breathingActivity.Time);
             }
 
             // --------------Reflecting Activity----------------
@@ -46,13 +46,13 @@ class Program
                 ReflectingActivity reflectingActivity = new ReflectingActivity();
 
                 reflectingActivity.ActivityName = "Reflecting Activity";
-                reflectingActivity.displayWelcomeMessage();
-                reflectingActivity.displayDescription(activityInt);
+                reflectingActivity.DisplayWelcomeMessage();
+                reflectingActivity.DisplayDescription(activityInt);
 
                 reflectingActivity.Time = Int32.Parse(Console.ReadLine());
 
                 reflectingActivity.GetReady();
-                reflectingActivity.displayReflection(reflectingActivity.Time);
+                reflectingActivity.DisplayReflection(reflectingActivity.Time);
             }
 
             // --------------Listing Activity----------------
@@ -61,13 +61,13 @@ class Program
                 ListingActivity listingActivity = new ListingActivity();
 
                 listingActivity.ActivityName = "Listing Activity";
-                listingActivity.displayWelcomeMessage();
-                listingActivity.displayDescription(activityInt);
+                listingActivity.DisplayWelcomeMessage();
+                listingActivity.DisplayDescription(activityInt);
 
                 listingActivity.Time = Int32.Parse(Console.ReadLine());
 
                 listingActivity.GetReady();
-                listingActivity.displayListing(listingActivity.Time);
+                listingActivity.DisplayListing(listingActivity.Time);
             }
         }
 

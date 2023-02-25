@@ -7,7 +7,7 @@ public class ListingActivity : Activity
                                 "What are you grateful for?"};
     private int _entryCount = 0;
 
-    public void displayListing(int time)
+    public void DisplayListing(int time)
     {
         var random = new Random();
         int index = random.Next(_prompts.Count());
@@ -16,14 +16,14 @@ public class ListingActivity : Activity
         Console.WriteLine("List as many responses as you can to the following prompt:\n");
         Console.WriteLine($"--- {_prompts[index]} ---\n");
 
-        youMayBegin();
+        YouMayBegin();
 
         Write(time);
 
-        displayEndMessage();
+        DisplayEndMessage();
     }
 
-    private void youMayBegin()
+    private void YouMayBegin()
     {
         int time = 5;
         Console.Write("You may begin in:  ");

@@ -6,17 +6,17 @@ public class Activity
 
     public string ActivityName { private get; set; }
     public int Time { get; set; }
-    public void displayWelcomeMessage()
+    public void DisplayWelcomeMessage()
     {
         Console.Clear();
         Console.WriteLine($"Hello! Welcome to the {ActivityName}.");
     }
 
-    public void displayDescription(int choice)
+    public void DisplayDescription(int choice)
     {
         Console.WriteLine(_descriptions[choice - 1]);
     }
-    public void displayAnimation(int _time)
+    public void DisplayAnimation(int _time)
     {
         while (_time != 0)
         {
@@ -44,9 +44,9 @@ public class Activity
     public void GetReady()
     {
         Console.WriteLine("\nGet Ready...");
-        displayAnimation(3);
+        DisplayAnimation(3);
     }
-    public void displayEndMessage()
+    public void DisplayEndMessage()
     {
         Console.WriteLine();
         Console.WriteLine("Great job! Keep up the good work!");
