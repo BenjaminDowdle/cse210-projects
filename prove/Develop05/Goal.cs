@@ -15,11 +15,10 @@ public abstract class Goal
     }
 
     public abstract void SetIsCompleted();
-    public abstract void DisplayGoal(int option); //user.RecordEvent will use the option to show a list of the goals without the checkbox and description
+    public abstract void DisplayGoal(int option);
     public abstract string GetStringRep();
 
 
-    //GETTERS
     public bool GetIsCompleted()
     {
         return _isCompleted;
